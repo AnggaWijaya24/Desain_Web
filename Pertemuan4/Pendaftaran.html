@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran STMIK Kaputama</title>
+</head>
+<body>
+    <form action="daftar" method="post">
+    <table align="center" height="65%">
+        <thead>
+        <tr>
+          <th colspan="4" bgcolor="#AAD8E" align="left" style="height: 70px; color: darkcyan;">Data Diri</th>
+        </tr>
+        </thead>
+        <tr>
+            <td colspan="2">
+               <h4><label for="nik">NIK : *</label></h4>
+                <input type="number" id="nik" name="nik" maxlength="10" size="50">
+            </td>
+            <td colspan="2">
+                <h4><label for="nama_lengkap">Nama Lengkap :*</label></h4>
+                <input type="text" id="nama" name="nama" size="50">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="ttl">Tempat/Tanggal Lahir : *</label><br></h4>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">     
+                <input type="text" placeholder="Tempat Lahir" id="tempat_lahir" name="tempat_lahir">
+                <input type="date" style="width: 440px;" id="date" name="date"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="Jenis_Kelamin">Jenis Kelamin : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <input type="radio" name="JK" value="Laki-laki" id="laki">Laki-laki
+            </td>
+            <td>
+               <input type="radio" name="JK" value="perempuan" id="perempuan">Perempuan
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="Status" >Status : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="Status_menikah" value="Menikah">Menikah
+            </td>
+            <td>
+                <input type="radio" name="Status_menikah" value="Belum Menikah">Belum Menikah
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="Agama">Agama : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="radio" name="Agama" value="islam" id="islam">Islam
+            </td>
+            <td>
+            <input type="radio" name="Agama" value="Protestan" id="Protestan">Protestan
+            </td>
+            <td>
+            <input type="radio" name="Agama" value="katolik" id="katolik">Katolik
+            </td>
+            <td>
+            <input type="radio" name="Agama" value="hindu" id="hindu">Hindu
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="Agama" value="budha" id="budha">Budha
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="Transportasi">Alat Transportasi :</label><br></h4>
+            </td>
+            <td>
+                <h4><label for="Jenis Tinggal">Jenis Tinggal :</label><br></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <select name="transportasi" style="width: 150px; height: 30px;" id="transportasi">
+            <option value="1">Jalan Kaki</option>
+            <option value="2">Angkutan umum/bus/pete-pete</option>
+            <option value="3">Mobil/bus antar jemput</option>
+            <option value="4">Kereta api</option>
+            <option value="5">Ojek</option>
+            <option value="6">Andong/bendi/sado/dokar/delman/becak</option>
+            <option value="7">Perahu penyebrangan/rakit/getek</option>
+            <option value="8">Kuda</option>
+            <option value="9">Sepeda</option>
+            <option value="10">Sepeda motor</option>
+            <option value="11">Mobil Pribadi</option>
+            <option value="99">Lainnya</option>
+            </select></td>
+            </td> 
+            <td>
+            <select name="jenis_tinggal" style="width: 150px; height: 30px;" id="jenis_tinggal">
+            <option value="1">Bersama Orang Tua</option>
+            <option value="2">Wali</option>
+            <option value="3">Kost</option>
+            <option value="4">Asrama</option>
+            <option value="5">Panti asuhan</option>
+            <option value="99">Lainnya</option>
+            </select></td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="KPS">Penerima KPS : *</label><br></h4>
+            </td>
+            <td>
+                <h4><label for="Kewarganegaraan">Kewarganegaraan : *</label><br></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <select name="KPS" style="width: 150px; height: 30px;" id="KPS">
+            <option value="Ya">Ya</option>
+            <option value="Tidak">Tidak</option>
+            </select>
+            </td>
+            <td>   
+            <select name="warga_negara" style="width: 150px; height: 30px;" id="warga_negara">
+            <option value="WNI">WNI</option>
+            <option value="WNA">WNA</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="alamat_lengkap">Alamat Lengkap (Sesuai KTP) : *</label><br></h4>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <textarea type="text" name="alamat_lengkap" id="alamat-lengkap"></textarea>
+            </td>    
+        </tr>
+        <tr><td>
+            <h4><label for="rt/rw">RT/RW :</label></h4>
+            </td>
+            <td>
+            <h4><label for="jalan">Jalan :</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="text" placeholder="RT" style="width: 68px;" name="rt">
+            <input type="text" placeholder="RW" style="width: 68px;" name="rw">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="kode-pos">Kode Pos :</label></h4>
+            </td>
+            <td>
+               <h4><label for="keldesa">Kel/Desa : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="number" name="kode_pos" id="kode-pos">
+            </td>
+            <td>
+                <input type="text" name="keldesa" id="keldesa">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="dusun">Dusun :</label></h4>
+            </td>
+            <td>
+                <h4><label for="kecamatan">Kecamatan : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="Dusun" id="Dusun">
+            </td>
+            <td>
+                <input type="text" name="Kecamatan" id="Kecamatan">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="NPWP">NPWP :</label></h4>
+            </td>
+            <td>
+                <h4><label for="Telpon">Telp/Hp : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+           <td>
+               <input type="text" name="NPWP" id="NPWP">
+           </td>
+           <td>
+               <input type="number" name="Telpon" id="Telpon">
+           </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <h4><label for="Surel">Email :</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="email" name="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="Asal-Sekolah">Asal Sekolah : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="text" name="Asal Sekolah" id="Asal Sekolah" size="120">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="NISN">NISN : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="NISN" id="NISN">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="Jurusan">Jurusan : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="Jurusan" id="Jurusan"></td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="Alamat">Alamat : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <textarea name="alamat-asal-sekolah" id="alamat-asal-sekolah" cols="17" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="Program_Studi">Program Studi : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 230px;">
+                <input type="radio" name="Prodi" value="TI" id="ti">Teknik Informatika (S1)
+            </td>
+            <td style="width: 230px;">
+                <input type="radio" name="Prodi" value="SI" id="si">Sistem Informasi (S1)
+            </td>
+            <td style="width: 230px;">
+                <input type="radio" name="Prodi" value="MI" id="mi">Manajemen Informatika (D3)
+            </td>
+            <td style="width: 230px;">
+                <input type="radio" name="Prodi" value="KA" id="ka">Komputerisasi Akuntansi (D3)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="Waktu_Belajar">Waktu Belajar : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="waktu_belajar" value="pagi" id="Pagi">Pagi
+            </td>
+            <td>
+                <input type="radio" name="waktu_belajar" value="sore" id="sore">Sore
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="Kelas">Pilihan Kelas : *</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="Kelas" id="Reguler">Reguler
+            </td>
+            <td>
+                <input type="radio" name="Kelas" id="Karyawan">Karyawan
+            </td>
+            <td>
+                <input type="radio" name="Kelas" id="KIP Kuliah">KIP Kuliah
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="data_orang_tua"> Data Orang Tua</label></h4>
+            </td>
+            <td align="right" colspan="4">
+                <button type="button" id="data_ortu"> Isi Data</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4><label for="data_wali">Data Wali</label></h4>
+            </td>
+            <td align="right" colspan="4">
+                <button type="button" id="data_wali">Isi Data</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+               <h4><label for="">Sumber Informasi Mengenai STMIK Kaputama</label></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="radio" name="info_kampus" value="spanduk" id="spanduk">Browser/Spanduk/Poster
+            </td>
+            <td>
+            <input type="radio" name="info_kampus" value="Media Masa" id="media_masa">Media Masa
+            </td>
+            <td>
+            <input type="radio" name="info_kampus" value="Teman/Saudara" id="teman">Teman/Saudara
+            </td>
+            <td>
+            <input type="radio" name="info_kampus" value="Sosmed" id="sosmed">Sosmed
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="radio" name="info_kampus" value="Lainnya" id="lainnya">
+                 <input type="text" name="lainnya" placeholder="Lain-lain">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4></h4>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="checkbox" name="check"  value="Data Benar" id="check">
+                <b><label for="check">Saya telah memastikan data yang saya isi sudah benar.</label></b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4></h4>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <b><label for="foto"> Masukan Foto :</label></b>
+                <input type="file" name="foto" id="foto">
+            </td>
+        </tr>
+        <tr>
+            <tr>
+                <td>
+                    <h4></h4>
+                </td>
+            </tr>
+            <td colspan="2">
+                <b><label for="password">Masukan Password :</label></b>
+                <input type="password" name="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Simpan</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <img src="STMIK Kaputma PNG.png" height="300" hspace="250">
+            </td>
+        </tr>
+    </table>
+    <div class="copyright">
+        <center style="black;margin-top: 140px;">Jangan Ditiru Website Ini!!!</center>
+    </div>
+</form>
+</body>
+</html>
