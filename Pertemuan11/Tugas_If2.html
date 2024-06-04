@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas_If2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var harga=1000;
+        var jumlah=4;
+        var diskon=0;
+        var totalBayar=0;
+if (jumlah>=3){
+    diskon= 0.10 * harga * jumlah;
+}
+else{
+    diskon=0;
+}
+totalBayar = (harga * jumlah) - diskon;
+    document.write("Harga Per item :" + harga);
+    document.write('<br>')
+    document.write("Jumlah Beli :" + jumlah);
+    document.write('<br>')
+    document.write("Diskon :" + diskon);
+    document.write('<br>')
+    document.write("Total Bayar :" + totalBayar);
+    </script>
+</body>
+</html>
